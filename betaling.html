@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>betaling</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--header start-->
+    <header>
+      <nav>
+        <ul>
+          <li class="cart">
+            <a href="checkout.html">
+              <ion-icon name="basket-outline"></ion-icon>Cart<span>0</span>
+            </a>
+          </li>
+        </ul>
+        <img id="logo" src="images/habitreelogopng.png" alt="" />
+      </nav>
+    </header>
+
+    <!--header slut-->
+
+    <!--breadcrumbs -->
+    <ul class="breadcrumb">
+      <li><a href="index.html">Forisde</a></li>
+      <li><a href="produkt.html">Produkt</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+      <li>Betaling</li>
+    </ul>
+
+    <!--header slut-->
+
+    <!-- betaling start -->
+    <section class="betaling">
+      <div class="row">
+        <div class="col-75">
+          <h3 class="betaling-header">Betalings adresse</h3>
+          <div class="container">
+            <form action="/action_page.php">
+              <div class="row">
+                <div class="col-50">
+                  <label for="fname"
+                    ><i class="fa fa-user"></i> Fulde Navn</label
+                  >
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="Christian W. Winkler"
+                  />
+                  <label for="email"
+                    ><i class="fa fa-envelope"></i> Email</label
+                  >
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Christian@example.com"
+                  />
+                  <label for="adr"
+                    ><i class="fa fa-address-card-o"></i> Addresse</label
+                  >
+                  <input
+                    type="text"
+                    id="adr"
+                    name="address"
+                    placeholder="Nordborg Gade 38"
+                  />
+                  <label for="city"><i class="fa fa-institution"></i> By</label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="Odense"
+                  />
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">Region</label>
+                      <input
+                        type="text"
+                        id="state"
+                        name="state"
+                        placeholder="Fyn"
+                      />
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Postnummer</label>
+                      <input
+                        type="text"
+                        id="zip"
+                        name="zip"
+                        placeholder="5330"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-50">
+                  <h3>Betaling</h3>
+                  <label for="fname">Acceptede kort</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color: navy"></i>
+                    <i class="fa fa-cc-amex" style="color: blue"></i>
+                    <i class="fa fa-cc-mastercard" style="color: red"></i>
+                    <i class="fa fa-cc-discover" style="color: orange"></i>
+                  </div>
+                  <label for="cname">Navn på kort</label>
+                  <input
+                    type="text"
+                    id="cname"
+                    name="cardname"
+                    placeholder="Christian W. Winkler"
+                  />
+                  <label for="ccnum">Kort nummer</label>
+                  <input
+                    type="text"
+                    id="ccnum"
+                    name="cardnumber"
+                    placeholder="1111-2222-3333-4444"
+                  />
+                  <label for="expmonth">Udløbs måned</label>
+                  <input
+                    type="text"
+                    id="expmonth"
+                    name="expmonth"
+                    placeholder="September"
+                  />
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Udløbs År</label>
+                      <input
+                        type="text"
+                        id="expyear"
+                        name="expyear"
+                        placeholder="2018"
+                      />
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input
+                        type="text"
+                        id="cvv"
+                        name="cvv"
+                        placeholder="352"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr" />
+                forsendelses addresse samme som betalings adresse
+              </label>
+              <input type="submit" value="GODKEND" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- betaling slut -->
+
+    <!--footer start-->
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <p class="footer-left"></p>
+        <h3>Habitree ApS</h3>
+        <br />
+        <p>Frederiksdalvej 2</p>
+        <p>8940 Randers SV</p>
+        <br />
+        <p>CVR: 41274611</p>
+        <br />
+        <p>Telefon: +45 86 888 999</p>
+        <p>E-Mail: salg@habitree.dk</p>
+      </div>
+      <div class="footer-center">
+        <div>
+          <img src="images/habitreelogopng.png" alt="habitree logo" />
+        </div>
+      </div>
+      <div class="footer-right">
+        <br />
+        <h3>Åbningstider:</h3>
+        <br />
+        <br />
+        <p>Mandag-Torsdag:</p>
+        <p>08:00-16:00</p>
+        <p>Fredag: 08:00-14:00</p>
+        <br />
+        <a href="https://www.facebook.com/www.habitree.dk">
+          <i class="fa-brands fa-facebook-f fa-2x" style="color: black"> </i>
+        </a>
+
+        <a href="https://www.instagram.com/habitreedenmark/?hl=da">
+          <i class="fa-brands fa-instagram fa-2x" style="color: black"> </i>
+        </a>
+
+        <a href="https://www.pinterest.dk/habitreedenmark/">
+          <i class="fa-brands fa-pinterest-p fa-2x" style="color: black"> </i>
+        </a>
+
+        <a href="https://www.linkedin.com/company/habitree-aps/about/">
+          <i class="fa-brands fa-linkedin-in fa-2x" style="color: black"> </i>
+        </a>
+
+        <script
+          src="https://kit.fontawesome.com/21f88e78d2.js"
+          crossorigin="anonymous"
+        ></script>
+      </div>
+    </footer>
+
+    <!--footer slut-->
+    <script src="js/betalin.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

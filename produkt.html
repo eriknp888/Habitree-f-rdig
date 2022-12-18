@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forside</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!--header start-->
+      <header>
+        <nav>
+          <ul>
+            <li class="cart">
+              <a href="checkout.html">
+                <ion-icon name="basket-outline"></ion-icon>Cart<span>0</span>
+              </a>
+            </li>
+          </ul>
+
+          <img id="logo" src="images/habitreelogopng.png" alt="habitreelogo" />
+        </nav>
+      </header>
+
+      <!--header slut-->
+
+      <!--breadcrumbs -->
+      <ul class="breadcrumb">
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="produkt.html">Produkt</a></li>
+      </ul>
+      <!-- Produkt start -->
+      <section>
+        <div class="produkt-tekst-pris-1">
+          <h2>Habitree Character 180cm</h2>
+          <h3>1.495,00Kr</h3>
+          <div class="container123">
+            <button onclick="decrement()">-</button>
+            <h2 id="counting1">1</h2>
+            <button onclick="increment()">+</button>
+            <button
+              id="tilføj-til-kurv"
+              onclick="window.location.href='checkout.html';"
+            >
+              Tilføj til kurv
+            </button>
+          </div>
+        </div>
+
+        <div class="produkt-container">
+          <div class="produkt-side1">
+            <img
+              class="produkt-side1-image1"
+              src="images/habbi_inspiration_7.webp"
+              alt="habitree inspiration"
+            />
+            <div class="produkt-side1-images">
+              <img src="images/treeoppefraredi.png" alt="habitreeprodukt" />
+              <img src="images/Habitree-box.webp" alt="habitreeprodukt" />
+              <img src="images/habitree-stativ.webp" alt="habitreeprodukt" />
+              <img src="images/trevejledneredi.png" alt="habitreeprodukt" />
+            </div>
+          </div>
+          <div class="produkt-side2">
+            <div class="produkt-tekst-pris">
+              <h1>Habitree Character 180cm</h1>
+              <h3>1.495,00Kr</h3>
+              <div class="container123">
+                <button onclick="decrement()">-</button>
+                <h2 id="counting1">1</h2>
+                <button onclick="increment()">+</button>
+                <button
+                  id="tilføj-til-kurv"
+                  onclick="window.location.href='checkout.html';"
+                >
+                  Tilføj til kurv
+                </button>
+              </div>
+              <h3 id="h3-vare">
+                Varenummer (SKU): CH95 <br />
+                Kategori: Juletræer
+              </h3>
+            </div>
+            <!--produkt info tab-->
+            <div class="tab">
+              <button class="tablinks" onclick="openinfo(event, 'Beskrivelse')">
+                Beskrivelse
+              </button>
+              <button class="tablinks" onclick="openinfo(event, 'info')">
+                Yderligere info
+              </button>
+            </div>
+            <div id="Beskrivelse" class="tabcontent">
+              <h3>Beskrivelse</h3>
+              <p>
+                Habitree Character er rustikt med sine knaster og varierende
+                farve og passer perfekt ind i den traditionelle nordiske stil.
+                <br />
+
+                Lavet af førsteklasses, bæredygtigt og allergivenligt træ, som
+                du kan bruge igen år efter år. Juletræet fra Habitree kan formes
+                og dekoreres ligesom du vil have det. Det varmer ethvert miljø
+                med dets naturlige skønhed og positive sjæl. <br />
+                <br />
+                Træet er lavet af Kebony, som er FSC®-certificeret og bærer det
+                nordiske Svanemærke. <br />
+                <br />
+                Habitree er tilgængelig i 4 standard størrelser: 55 cm høj / 40
+                cm bred. 95 cm høj / Ø70 cm bred. 125 cm høj / Ø90 cm bred. 180
+                cm høj / Ø120 cm bred. Ver. 2.0 <br />
+                <br />
+                Ny forbedret udgave med helt stabil fod – se billede i galleri
+                til venstre. <br />
+                <br />
+                Habitree er patentbeskyttet. <br />
+                <br />
+                Emballage <br />
+                Dit Habitree kommer i en specialdesignet emballage – 178 cm lang
+                og blot 18 cm bred og 10 cm høj. Så træet er meget nemt at pakke
+                væk i et indendørs skab eller under sengen – klar til næste
+                sæson.
+              </p>
+            </div>
+
+            <div id="info" class="tabcontent">
+              <h3>Yderligere info</h3>
+              <p>
+                Vægt 11,5 kg <br />
+                Størrelse 178 × 18 × 10 cm
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="relaterede-vare-header">Relaterede vare</h2>
+        <div class="forside-shop-gallery-1">
+          <div class="forside-shop-billeder-1">
+            <img src="images/habbi_shop_1.webp" alt="habitree shop" />
+            <div id="gallery-habitree">
+              <h3>
+                Habitree Character 55 cm<br />
+                Ver. 2.0
+              </h3>
+              <p>845,00kr.</p>
+              <button id="Tilføj-til-kurv">Tilføj til kurv</button>
+            </div>
+          </div>
+          <div class="forside-shop-billeder-1">
+            <img src="images/habbi_shop_11.webp" alt="habitree shop" />
+            <div id="gallery-habitree">
+              <h3>
+                Habitree Character 95 cm<br />
+                Ver. 2.0
+              </h3>
+              <p>1.495,00kr.</p>
+              <button id="Tilføj-til-kurv">Tilføj til kurv</button>
+            </div>
+          </div>
+          <div class="forside-shop-billeder-1">
+            <img src="images/habbi_shop_8.webp" alt="habitree shop" />
+            <div id="gallery-habitree">
+              <h3>
+                Habitree Character 125 cm <br />
+                Ver. 2.0
+              </h3>
+              <p>1.795,00kr.</p>
+              <button id="Tilføj-til-kurv">Tilføj til kurv</button>
+            </div>
+          </div>
+          <div class="forside-shop-billeder-1">
+            <img src="images/habbi_shop_9.webp" alt="habitree shop" />
+            <div id="gallery-habitree">
+              <h3>
+                Habitree Character 180 cm <br />
+                Ver. 2.0
+              </h3>
+              <p>2.395,00kr.</p>
+              <button id="Tilføj-til-kurv">Tilføj til kurv</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Produkt slut -->
+    </main>
+    <!--footer start-->
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <p class="footer-left"></p>
+        <h3>Habitree ApS</h3>
+        <br />
+        <p>Frederiksdalvej 2</p>
+        <p>8940 Randers SV</p>
+        <br />
+        <p>CVR: 41274611</p>
+        <br />
+        <p>Telefon: +45 86 888 999</p>
+        <p>E-Mail: salg@habitree.dk</p>
+      </div>
+      <div class="footer-center">
+        <div>
+          <img src="images/habitreelogopng.png" alt="habitree logo" />
+        </div>
+      </div>
+      <div class="footer-right">
+        <br />
+        <h3>Åbningstider:</h3>
+        <br />
+        <br />
+        <p>Mandag-Torsdag:</p>
+        <p>08:00-16:00</p>
+        <p>Fredag: 08:00-14:00</p>
+        <br />
+        <a href="https://www.facebook.com/www.habitree.dk">
+          <i class="fa-brands fa-facebook-f fa-2x" style="color: black"> </i>
+        </a>
+
+        <a href="https://www.instagram.com/habitreedenmark/?hl=da">
+          <i class="fa-brands fa-instagram fa-2x" style="color: black"> </i>
+        </a>
+
+        <a href="https://www.pinterest.dk/habitreedenmark/">
+          <i class="fa-brands fa-pinterest-p fa-2x" style="color: black"> </i>
+        </a>
+
+        <a href="https://www.linkedin.com/company/habitree-aps/about/">
+          <i class="fa-brands fa-linkedin-in fa-2x" style="color: black"> </i>
+        </a>
+
+        <script
+          src="https://kit.fontawesome.com/21f88e78d2.js"
+          crossorigin="anonymous"
+        ></script>
+      </div>
+    </footer>
+
+    <!--footer slut-->
+    <script
+      src="https://kit.fontawesome.com/21f88e78d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/produkt.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
